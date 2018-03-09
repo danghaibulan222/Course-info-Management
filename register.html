@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="./common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./common/css/style.css">
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default .navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Course-info Management</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="course_list.html">我的课表</a>
+                </li>
+                <li>
+                    <a href="choose.html">选课</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class='glyphicon glyphicon-user'></span>  用户 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="user_info.html">信息修改</a></li>
+                        <li><a href="user-xuehao.html">学号绑定</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">退出</a></li>
+                    </ul>
+                </li>
+                <li class="active" ><a href="register.html">注册</a></li>
+                <li><a href="login.html" >登录</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <!--左侧-->
+        <div class="col-md-8">
+
+            <!--注册-->
+            <div class="panel panel-default panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">注册用户</h3>
+                </div>
+                <div class="panel-body">
+                    <form accept-charset="UTF-8" action="" class="form-horizontal" id="new_user" method="post" novalidate="novalidate">
+                        <input type="hidden" name="" value="">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="user_num">账号</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="user_num" name="user_num" type="text"/>
+                            </div>
+                        </div>
+                      <!--  <div class="form-group">
+                            <label class="col-sm-2 control-label" for="user_nickname">昵称</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="user_nickname" name="user_nickname" type="text"  />
+                            </div>
+                        </div>-->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="user_email">电子邮件</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="user_email" name="user_email" size="50" type="email"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="user_password">密码</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="user_password" name="user_password" type="password"  />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="user_password_confirmation">密码确认</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="user_password_confirmation" name="user_password_confirmation" type="password" value="" /><span class="help-block red"></span>
+                            </div>
+                        </div>
+                      <!--  验证码-->
+                      <!--  <div class="form-group">
+                            <label class="col-sm-2 control-label" for="captcha_code">验证码</label>
+                            <div class="col-sm-3">
+                                <input class="form-control" id="captcha_code" name="captcha_code" size="50" type="text" value="" />
+                                <span class="help-block red"></span>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="javascript:reloadcode();" title="更换验证码"><img src="<?php echo site_url('captcha_code');?>" name="checkCodeImg" id="checkCodeImg" border="0" /></a> <a href="javascript:reloadcode();">换一张</a>
+                            </div>
+                        </div>-->
+                        <div class='form-group'>
+                            <div class="col-sm-offset-2 col-sm-9">
+                                <button type="submit" name="commit" class="btn btn-primary">注册</button>
+                                <a href="login.html" class="btn btn-default" role="button">去登录</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="col-md-4">
+            <!--公告-->
+            <div class="panel panel-default panel-info">
+                <div class="panel-heading">
+                    <h4>公告</h4>
+                </div>
+                <div class="panel-body">
+                    <a href="">选课</a><p>开始了，准备好了吗，我们去选课la</p>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--登录引导-->
+            <div class="panel panel-default panel-warning">
+                <div class="panel-heading">
+                    <h4>欢迎使用课程信息管理系统</h4>
+                </div>
+                <div class="panel-body">
+                    <a href="" class="btn btn-default">现在注册</a> 已注册请
+                    <a href="" class="startbbs">登入</a>
+                </div>
+            </div>
+            <!--个人信息-->
+            <div class="panel panel-default panel-info">
+                <div class="panel-heading">
+                    <h4>个人信息</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <a href=""><img alt="头像" class="img-rounded" src="" /></a>
+                        </div>
+                        <div class="col-md-7">
+                            <ul class="list-unstyled">
+                                <li><a href="" title=""></a></li>
+                                <li>昵称：</li>
+                                <li>学号：</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <p><a href=""></a></p>
+                            <p><a href="">收藏</a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><a href=""></a></p>
+                            <p><a href="">关注</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer text-muted">
+                    <img align="top" alt="" class="icon" src="" />
+                    <a href=""> 条未读提醒</a>
+                    暂无提醒
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<script src="./common/js/lib/jquery.js"></script>
+<script src="./common/js/bootstrap.min.js"></script>
+<script src="./common/js/dist/jquery.validate.min.js"></script>
+<script src="./common/js/form.js"></script>
+</body>
+</html>

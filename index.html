@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="">
+
+    <title>Course-info Management</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="./common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./common/css/indexstyle.css">
+    <link rel="stylesheet" href="./common/css/reset.css">
+    <link rel="stylesheet" href="./common/css/animated-logo.min.css">
+    </head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Course-info Management</a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="example">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#page-top">首页</a>
+                </li>
+                <li>
+                    <a class="" href="course_list.html">我的课表</a>
+                </li>
+                <li>
+                    <a class="" href="choose.html" >选课</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class='glyphicon glyphicon-user'></span>  用户 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="user_info.html">信息修改</a></li>
+                        <li><a href="user-xuehao.html">学号绑定</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">退出</a></li>
+                    </ul>
+                </li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="login.html">登录</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+<header id="page-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="o-container">
+                    <div class="c-slack">
+                        <span class="c-slack__dot c-slack__dot--a"></span>
+                        <span class="c-slack__dot c-slack__dot--b"></span>
+                        <span class="c-slack__dot c-slack__dot--c"></span>
+                        <span class="c-slack__dot c-slack__dot--d"></span>
+                    </div>
+                </div>
+                <div class="intro-text">
+                    <div class="intro-lead-in">Welcome To Course-info Management!</div>
+                    <div class="intro-heading">课程管理系统</div>
+                </div>
+                <a class="btn btn-1 btn-sm" href="#func">功能简介</a>
+                <a class="btn btn-1 btn-sm" href="#about">快速使用</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="page-content" class="index-page">
+    <!--功能展示 -->
+    <section id="func" class="box-content box-1">
+        <div class="container">
+            <div class="row heading">
+                <div class="col-lg-12">
+                    <h2>功能简介</h2>
+                    <hr>
+                    <div class="intro">hello ,world</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 box-item">
+                    <div class="wrap-img">
+                        <img src="./common/images/diy.png" />
+                    </div>
+                    <h3 class="blue">随意定制</h3>
+                    <p>我们的课表可随意预制，最大化规划您最希望选的课，实现集中化管理</p>
+                    <button type="submit" class="btn btn-2 ">More</button>
+                </div>
+                <div class="col-sm-3 box-item">
+                    <div class="wrap-img">
+                        <img src="./common/images/search.png" />
+                    </div>
+                    <h3 class="red">查找快捷</h3>
+                    <p>访问选课系统的数据库，避免学校教务处浏览高峰造成的网络拥堵，可快速查到课程信息</p>
+                    <button type="submit" class="btn btn-2 ">More</button>
+                </div>
+                <div class="col-sm-3 box-item">
+                    <div class="wrap-img">
+                        <img src="./common/images/security.png" />
+                    </div>
+                    <h3 class="blue">数据安全</h3>
+                    <p>选课系统采用邮箱验证可找回自己的密码，不直接使用学号作为账号更加安全</p>
+                    <button type="submit" class="btn btn-2 ">More</button>
+                </div>
+                <div class="col-sm-3 box-item">
+                    <div class="wrap-img">
+                        <img src="./common/images/Setting.png" />
+                    </div>
+                    <h3 class="green">一键提交</h3>
+                    <p>课表定制好前不需繁琐提交信息，合理仔细规划后可一键提交，省时省力.</p>
+                    <button type="submit" class="btn btn-2 ">More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--过度 -->
+    <section id="new" class="box-content box-2 box-style">
+        <div class="container">
+            <div class="row">
+                <blockquote>工欲善其事,必先利其器.</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!--快速使用 -->
+    <section id="about" class="box-content box-3">
+        <div class="container">
+            <div class="row heading">
+                <div class="col-lg-12">
+                    <h2>快速使用</h2>
+                    <hr>
+                    <div class="intro">How to get started</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li class="blue">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="./common/images/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">注册并登录自己的账号</h4>
+                                    <h4 class="subheading"><br></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">使用本选课系统需先登录，并且我们的账号是独立的，所以如果你没有账号，请先注册</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted red">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="./common/images/5.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">绑定教务处学号</h4>
+                                    <h4 class="subheading"><br></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">由于定制课表需要访问教务处数据库，
+                                        我们需要你们提供学号和教务处密码，若果没有绑定，请先绑定才能正常使用</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="green">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="./common/images/6.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">选课定制自己的课表</h4>
+                                    <h4 class="subheading"><br></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">为自己临时的课表随意添加自己喜欢的课程吧，即使时间冲突也没有关系额，我们会为你做出合理的安排</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted yellow">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="./common/images/7.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">提交课表</h4>
+                                    <h4 class="subheading"><br></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted"> 我们会将你期望的课表处理后提交教务处，课程规划结束，静候佳音吧</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted ">
+                            <div class="timeline-image">
+                               <a href="choose.html"> <h4>选课
+                                    <br>
+                                    Start</h4>
+                               </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</div>
+
+<footer class="small">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+               <br><br>
+                © 2017 <a title="2017课程管理系统">课程管理系统</a>. All Rights Reserved.
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="./common/js/lib/jquery.js"></script>
+<script src="./common/js/bootstrap.min.js"></script>
+
+
+<!--<script src="./common/js/jq/masonry.pkgd.min.js"></script>
+<script src="./common/js/jq/jquery.flexslider-min.js"></script>
+<script src="./common/js/jq/main.js"></script>
+<script src="./common/js/jq/modernizr.js"></script>-->
+
+<!-- Animated Top -->
+<script src="./common/js/jq/jquery.easing.min.js"></script>
+<script src="./common/js/jq/classie.js"></script>
+<script src="./common/js/jq/cbpAnimatedHeader.js"></script>
+<script src="./common/js/jq/agency.js"></script>
+</body>
+</html>

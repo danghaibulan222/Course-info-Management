@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程选择</title>
+    <link rel="stylesheet" href="./common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./common/css/style.css">
+
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default .navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Course-info Management</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="course_list.html">我的课表</a>
+                </li>
+                <li class="active" >
+                    <a  class="active" href="choose.html">选课</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class='glyphicon glyphicon-user'></span>  用户 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="user_info.html">信息修改</a></li>
+                        <li><a href="user-xuehao.html">学号绑定</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">退出</a></li>
+                    </ul>
+                </li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="login.html" >登录</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <!--左侧-->
+        <!--选课-->
+        <div class="col-md-4">
+            <div class="panel panel-default panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">课程查询</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-horizontal" id="choose">
+                        <input type="hidden" name="" value="">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="k_name">课程名</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="k_name" name="k_name" type="text"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="k_num">课程号</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="k_num" name="k_num" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="k_num2">课序号</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="k_num2" name="k_num2" type="text"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="k_xisuo">开课系所</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="k_xisuo" name="k_xisuo" type="text"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="k_xiaochu">校区</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="k_xiaochu" name="k_xiaochu" type="text"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="k_teach">任课老师</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="k_teach" name="k_teach" type="text"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">时间</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>星期一</option>
+                                    <option>星期二</option>
+                                    <option>星期三</option>
+                                    <option>星期四</option>
+                                    <option>星期五</option>
+                                    <option>星期六</option>
+                                    <option>星期日</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">节次</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>第1节</option>
+                                    <option>第2节</option>
+                                    <option>第3节</option>
+                                    <option>第4节</option>
+                                    <option>第5节</option>
+                                    <option>第6节</option>
+                                    <option>第7节</option>
+                                    <option>第8节</option>
+                                    <option>第9节</option>
+                                    <option>第10节</option>
+                                    <option>第11节</option>
+                                    <option>第12节</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class='form-group'>
+                            <div class="col-sm-8">
+                                <button type="submit" name="commit" class="btn btn-primary">查找</button>
+                                <button  class="btn btn-default" type="reset">重置</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--右侧-->
+        <div class="col-md-8">
+
+            <!--课表-->
+            <div class="panel panel-default panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">定制课表</h3>
+                </div>
+                <div class="panel-body">
+                    <form accept-charset="UTF-8" action="" class="form-horizontal"  method="post" novalidate="novalidate">
+                        <input type="hidden" name="" value="">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered text-center" id="course1">
+                                <thead>
+                                <tr>
+                                    <th> </th>
+                                    <th>周一</th>
+                                    <th>周二</th>
+                                    <th>周三</th>
+                                    <th>周四</th>
+                                    <th>周五</th>
+                                    <th>周六</th>
+                                    <th>周日</th>
+                                </tr>
+                                </thead>
+                                <tbody class="demo">
+                                <tr>
+                                    <td class="ecp">1</td>
+                                    <td class="test12"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="ecp">2</td>
+                                    <td></td>
+                                    <td><a class="test" data-trigger="hover" title="课程信息" data-html="true" data-content="课程名：<br>课程号：<br>课序号：<br>
+                                    学分：<br>老师：<br>考试：<br>课余量：<br>属性：<br>周次：<br>校区：<br>教学楼：<br>教室:">预制</a></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a id="1515_1">eqwqweqwe</a><br></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="ecp">3</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a id="1515_2">uyiyiyiy</a><br></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="ecp">4</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="ecp">5</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="ecp">6</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="ecp">7</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="ecp">8</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="ecp">9</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="ecp">10</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="ecp">11</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="ecp">12</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class='form-group'>
+                            <div class=" col-sm-2">
+                                <button type="submit" name="commit" class="btn btn-primary">保存课表</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+           <div class="panel panel-default panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">查询结果</h3>
+        </div>
+        <div class="panel-body">
+
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered text-center" id="result">
+                        <thead>
+                        <tr>
+                            <th> </th>
+                            <th>课程名</th>
+                            <th>课程号</th>
+                            <th>课序号</th>
+                            <th>学分</th>
+                            <th>老师</th>
+                            <th>考试</th>
+                            <th>课余量</th>
+                            <th>属性</th>
+                            <th>周次</th>
+                            <th>星期</th>
+                            <th>节次</th>
+                            <th>校区</th>
+                            <th>教学楼</th>
+                            <th>教室</th>
+                            <th style="display: none">节数</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>高数</td>
+                            <td>11</td>
+                            <td>11</td>
+                            <td>2</td>
+                            <td>东方</td>
+                            <td>考查</td>
+                            <td>40</td>
+                            <td>必修</td>
+                            <td>1-19</td>
+                            <td>
+                               <p>四</p>
+                            </td>
+                            <td>
+                                <p>1-4</p>
+                            </td>
+                            <td>江安</td>
+                            <td>一教B</td>
+                            <td>101</td>
+                            <td style="display: none">4</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td >计算机组成原理课程设计</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>2</td>
+                            <td>东方</td>
+                            <td>考查</td>
+                            <td>40</td>
+                            <td>必修</td>
+                            <td>1-19</td>
+                            <td>
+                                <p>四</p>
+                            </td>
+                            <td>
+                                <p>1-4</p>
+                            </td>
+                            <td>江安</td>
+                            <td>一教B</td>
+                            <td>101</td>
+                            <td style="display: none">4</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>高数</td>
+                            <td>13</td>
+                            <td>13</td>
+                            <td>2</td>
+                            <td>东方</td>
+                            <td>考查</td>
+                            <td>40</td>
+                            <td>必修</td>
+                            <td>1-19</td>
+                            <td>
+                                <p>一</p>
+                                <p>五</p>
+                            </td>
+                            <td>
+                                <p>1-4</p>
+                                <p>1-4</p>
+                            </td>
+                            <td>江安</td>
+                            <td>一教B</td>
+                            <td>101</td>
+                            <td style="display: none">8</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class='form-group'>
+                    <div class=" col-sm-2">
+                        <button id="choosebtn" class="btn btn-primary">添加课程</button>
+                    </div>
+                </div>
+
+        </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+            <div class="panel panel-default panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">已加课程</h3>
+                </div>
+                <div class="panel-body">
+
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered text-center" id="result2">
+                            <thead>
+                            <tr>
+                                <th>课程名</th>
+                                <th>老师</th>
+                                <th>课程号</th>
+                                <th>课序号</th>
+                                <th>操作</th>
+                                <th style="display: none">节数</th>
+
+                            </tr>
+                            <tr>
+                                <td>课程名</td>
+                                <td>老师</td>
+                                <td>课程号</td>
+                                <td>课序号</td>
+                                <td><button class="btn btn-danger" onclick="javascript:copy(this);" id="1515">删除此课</button></td>
+                                <td style="display: none">2</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+<script src="./common/js/lib/jquery.js"></script>
+<script src="./common/js/bootstrap.min.js"></script>
+<script src="./common/js/choose.js"></script>
+
+</body>
+</html>
